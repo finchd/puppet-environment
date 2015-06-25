@@ -1,7 +1,8 @@
 class { 'unbound':
     interface            => ['::0','0.0.0.0'],
       access             => ['127.0.0.1','10.0.0.0/20','::1'],
-      custom_server_conf => [ 'include: "/etc/unbound/conf.d/*.conf"'
+      custom_server_conf => [ 'include: "/etc/unbound/conf.d/*.conf"'],
+
 }
 
 unbound::record { 'sg1.dfin.ch':
