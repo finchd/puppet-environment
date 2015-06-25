@@ -1,6 +1,7 @@
 package { 'haveged':
-  ensure => 'latest';
+  ensure => 'latest',
 }
 service { 'haveged':
   ensure   => running,
+  require => Package['haveged'],
 }
