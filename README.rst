@@ -2,4 +2,4 @@
 dfin.ch Puppet Environment 
 ==========================
 
-Private use only, All rights reserved Donovan Finch (c) 2015
+A Puppet master (puppetmaster) in a Docker container for iterative testing.
